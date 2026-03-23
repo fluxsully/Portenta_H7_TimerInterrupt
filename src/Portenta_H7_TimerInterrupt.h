@@ -27,7 +27,7 @@
 #ifndef PORTENTA_H7_TIMERINTERRUPT_H
 #define PORTENTA_H7_TIMERINTERRUPT_H
 
-#if ( ( defined(ARDUINO_PORTENTA_H7_M7) || defined(ARDUINO_PORTENTA_H7_M4) ) && defined(ARDUINO_ARCH_MBED) )
+#if ( ( defined(ARDUINO_PORTENTA_H7_M7) || defined(ARDUINO_PORTENTA_H7_M4) || (defined(PORTENTA_H7_PINS) && defined(CORE_CM4)) ) && defined(ARDUINO_ARCH_MBED) )
   #warning Use MBED ARDUINO_PORTENTA_H7 and LittleFS
 
   #if defined(BOARD_NAME)
